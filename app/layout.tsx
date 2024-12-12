@@ -2,7 +2,7 @@ import type { Metadata } from 'next/types';
 import { Quattrocento, Roboto } from 'next/font/google';
 import './globals.css';
 import { cn } from '@/lib/utils';
-import Navbar from '@/Components/Navbar';
+import Navbar from '@/components/Navbar';
 
 const font = Quattrocento({
   weight: ['400', '700'],

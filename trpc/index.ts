@@ -4,6 +4,7 @@ import { TRPCError } from '@trpc/server';
 import { db } from '@/db';
 
 export const appRouter = router({
+  // entry point for all the  routers
   authCallback: publicProcedure.query(async () => {
     const { getUser } = getKindeServerSession();
     const user = await getUser();

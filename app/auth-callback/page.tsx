@@ -10,6 +10,7 @@ const Page = () => {
   const origin = searchParams.get('origin');
 
   // Call the authCallback procedure
+  // frontend code for consuming the authCalback metod from the dashboard.tsx also
   const { data, isSuccess, error } = trpc.authCallback.useQuery();
 
   console.log(data?.success, error);

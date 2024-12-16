@@ -3,7 +3,7 @@ import { trpc } from '@/app/_trpc/client';
 import { useState } from 'react';
 import UploadButton from './UploadButton';
 import Link from 'next/link';
-import { Ghost, Loader2, MessageSquare, Plus, Trash2 } from 'lucide-react';
+import { GhostIcon, Loader2, MessageSquare, Plus, Trash2 } from 'lucide-react';
 import { format } from 'date-fns';
 import { Button } from './ui/button';
 import Skeleton from 'react-loading-skeleton';
@@ -103,10 +103,10 @@ const Dashboard = () => {
             ))}
         </ul>
       ) : isLoading ? (
-        <Skeleton height={100} className="my-2" count={3} />
+        <Skeleton height={100} className="my-2" count={8} />
       ) : (
         <div className="mt-16 flex flex-col items-center gap-2">
-          <Ghost className="h-8 w-8 text-zinc-800" />
+          <GhostIcon className="h-8 w-8 text-zinc-800" />
           <h3 className="font-semibold text-xl">Pretty empty around here</h3>
           <p>Let&apos;s upload your files PDF</p>
         </div>
